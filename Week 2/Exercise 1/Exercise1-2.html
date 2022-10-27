@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 1.2</title>
+    </head>
+    <body>
+        <input type="text" value="Thai" id="input">
+        <button onclick="Copy()">Copy text</button>
+        <script>
+            function Copy() {
+                var copyText = document.getElementById('input');
+                copyText.select();
+                copyText.setSelectionRange(0, 99999);
+                navigator.clipboard.writeText(copyText.value);
+                alert('Copied the text: ' + copyText.value);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 1.1</title>
+    </head>
+    <body>
+        <script>
+            var today = new Date();
+            var day = today.getDay();
+            var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+            document.write("Today is: " + daylist[day] + '<br>');
+
+            var hours = today.getHours();
+            var minutes = today.getMinutes();
+            var second = today.getSeconds();
+            var ampm = hours >= 12 ? 'pm' : 'am';
+            hours = hours % 12;
+            hours = hours ? hours : 12;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            document.write('Current time is: ' + hours + ' ' + ampm + ': ' + minutes + ' : ' + second)
+        </script>
+    </body>
+</html>

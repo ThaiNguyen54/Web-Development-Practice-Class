@@ -1,6 +1,6 @@
 html {
     font-size: 10px;
-    background-color: blue;
+    background-color: rgba(42, 165, 159, 0.664);
     background-size: cover;
   }
   
@@ -59,3 +59,14 @@ html {
     font-family: "Arvo", cursive;
     text-shadow: 3px 0 rgb(0, 38, 255);
   }
+
+  h1 {
+    font-size: 5rem;
+    color: #DBEDF3;
+    font-family: cursive;
+    text-shadow: 3px 0 #DA0463;
+}
+
+.all {
+  margin: 10% auto;
+}

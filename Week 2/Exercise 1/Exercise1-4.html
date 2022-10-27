@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 1.4</title>
+    </head>
+    <body>
+        <script>
+            const CheckValidJSON = obj => {
+                try {
+                    JSON.parse(obj);
+                    return true;
+                }
+                catch(e) {
+                    return false;
+                }
+            }
+            document.write(CheckValidJSON('{"name":"Thai", "age":"21"}'))
+            // document.write(CheckValidJSON('asdfasfas'))
+            console.log(CheckValidJSON('{"name":"Thai", "age":"21"}'))
+        </script>
+    </body>
+</html>
