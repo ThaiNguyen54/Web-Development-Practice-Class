@@ -4,29 +4,35 @@
 <HEAD>
 <TITLE>My Information</TITLE>
 <link REL="SHORTCUT ICON" HREF="avatar.jpg">
-<link rel="stylesheet" href="./Exercise2-2.css">
+<link rel="stylesheet" href="./HW1.css">
 </HEAD>
 <BODY TEXT="#000068" LINK="#060FDF" VLINK="#060FDF" ALINK="#DC24C5" BGCOLOR="#FFFFFF">
 
+
+<div class="navbar">
+    <a href="javascript:Scroll('profile');">Profile</a>
+    <a href="javascript:Scroll('experiences');">Experiences</a>
+    <a href="javascript:Scroll('abilities');">Abilities</a>
+</div>
 <!-- <TABLE CELLPADDING="10" CELLSPACING="0" WIDTH="475"> -->
 <TABLE CELLPADDING="10" CELLSPACING="0">
 <TR VALIGN=TOP>
 
 <TD ALIGN=LEFT VALIGN=TOP WIDTH=151>
 
-
+    
 
 </TD>
 
 <TD ALIGN=LEFT VALIGN=TOP>
 
-<div class="profile"> 
+<div id="profile" class="profile"> 
     <h1 style="color: green"><bold>Profile</bold></h1>
     <p>I'm a UIT student</p>
     <hr>
     <div class="about-me">
         <h3 style="color: green">About Me</h3>
-        <p id="uni">I am studying at University of Information Technology.</p>
+        <p>I am studying at UIT.</p>
     </div>
 
     <div class="avatar">
@@ -46,7 +52,7 @@
 
 <hr>
 
-<div class="experiences">
+<div id="experiences" class="experiences">
 
     <h1 style="color: green">Experiences</h1>
 
@@ -82,7 +88,7 @@
 
 <hr>
 
-<div class="abilities">
+<div id="abilities" class="abilities">
     <h1 style="color: green">Abilities</h1>
     <div class="skills">
         <h2 style="color: green">Skills</h2>
@@ -133,23 +139,14 @@
     </div>
 </div>
 
-<button type="button" onclick="ChangeColor()">Change Back Ground Color</button>
-
-<br>
-<br>
-
-<button type="button" onclick="ChangeText()">Change Text</button>
-
 
 <script>
-    function ChangeColor() {
-      document.body.style.backgroundColor = "pink";
-    }
-
-    function ChangeText() {
-        document.getElementById("uni").innerHTML = "University of Information Technology"
+    function Scroll(id) {
+        const element = document.getElementById(id);
+        element.scrollIntoView();
     }
 </script>
+
 
 
 
