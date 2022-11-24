@@ -13,30 +13,13 @@ import Ex04 from "./Components/Ex04/Ex04";
 import MyComponent from "./Components/Ex10/MyComponent";
 import MyComponent11 from "./Components/Ex11/MyComponent";
 import Ex30 from "./Components/Ex30/Ex30";
+import Ex41 from './Components/Ex41/Ex41'
 
 import Ex12 from '.'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/*<App />*/}
-
-    {/*  <Ex0/>*/}
-
-    {/*  <Ex01/>*/}
-
-    {/*  <Ex02/>*/}
-
-    {/*  <MyButton/>*/}
-    {/*  <MySection/>*/}
-
-    {/*  <Ex04/>*/}
-
-    {/*<MyComponent/>*/}
-
-    {/*<MyComponent11/>*/}
-
-      <Ex30/>
-
+    <App />
 
   </React.StrictMode>
 );

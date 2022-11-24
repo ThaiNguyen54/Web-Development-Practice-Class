@@ -2,7 +2,6 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import MyButton from "./MyButton";
 import MyList from "./MyList";
-import App from '../../App'
 
 class Ex12 extends React.Component {
 
