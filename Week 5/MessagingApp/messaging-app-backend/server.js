@@ -6,7 +6,7 @@ const Pusher = require('pusher');
 
 const app = express()
 const port = process.env.PORT || 9000
-const connection_url = 'mongodb+srv://KimLe:kimle123@cluster0.c6nnpzt.mongodb.net/MessagingApp'
+const connection_url = ''
 
 const pusher = new Pusher({
     appId: "1521621",
