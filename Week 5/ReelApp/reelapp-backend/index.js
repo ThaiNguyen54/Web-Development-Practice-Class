@@ -9,7 +9,7 @@ const port = process.env.PORT || 9000
 const connection_url = 'your-connection-'
 
 // Middleware
-app.use(express.json())url
+app.use(express.json())
 app.use(Cors())
 
 // DB Configuration
